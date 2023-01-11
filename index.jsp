@@ -1,5 +1,5 @@
 <html>
-	<h1>GOUTHAM CHILIVERI {DEVOPS ENGINEER}</h1>
+	<h1>GOUTHAM CHILIVERI</h1>
 	<h1>DELOITTE</h1>
 	<h2>Position:Senior Consultant</h2>
 	<h3>Email:gouthamc125@gmail.com</h3>
