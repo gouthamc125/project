@@ -1,6 +1,10 @@
 <html>
-<body>
+	<head>
+
+	</head>
+	<body>
 	
-</body>
+
+	</body>
 </html>
 
