@@ -1,0 +1,35 @@
+apiversion: apps/v1
+kind: Deployment
+metadata: 
+  name: regna-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: regna-app
+  template: 
+    metadata: 
+      labels: 
+        app: regna-app
+    spec: 
+      containers: 
+      - name: regna-container
+        image: gouthamc125/regna:v1
+        ports: 
+        - containerPort: 80
+    
+---
+apiversion: v1 
+kind: Service
+metadata: 
+  name: regna-deployment
+  labels: 
+    app: regna-app
+spec:
+  type: LoadBalancer
+  ports: 
+  - port: 80
+    targetport: 80
+    protocol: tcp
+  selector: 
+    app: regna-app
