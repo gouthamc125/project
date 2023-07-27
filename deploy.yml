@@ -22,14 +22,14 @@ spec:
 apiVersion: v1 
 kind: Service
 metadata: 
-  name: regna-deployment
+  name: regna-app
   labels: 
     app: regna-app
 spec:
   type: LoadBalancer
-  ports: 
+  ports:
   - port: 80
-    targetport: 80
-    protocol: tcp
-  selector: 
+    targetPort: 80
+    protocol: TCP
+  selector:
     app: regna-app
